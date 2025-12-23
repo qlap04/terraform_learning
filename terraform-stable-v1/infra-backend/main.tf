@@ -5,6 +5,8 @@ module "s3_bucket" {
 
   bucket = "tf-state-dev-kai-se-stable-v1"
 
+  force_destroy = true
+
   control_object_ownership = true
   object_ownership         = "BucketOwnerEnforced"
   acl                      = null
